@@ -3,13 +3,12 @@ package com.hucheng.beauty.entity;
 
 /**
  * 图片实体
- * @author chen
  */
 @SuppressWarnings("all")
 public class Image {
     private String id;
     private String author;
-    private String groupId;
+    private String type;
     private String title;
     private String name;
     private String url;
@@ -46,12 +45,12 @@ public class Image {
         this.id = id;
     }
 
-    public String getGroupId() {
-        return groupId;
+    public String getType() {
+        return type;
     }
 
-    public void setGroupId(String groupId) {
-        this.groupId = groupId;
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getName() {
@@ -62,10 +61,10 @@ public class Image {
         this.name = name;
     }
 
-    public Image(String id, String author, String groupId, String title, String name, String url) {
+    public Image(String id, String author, String type, String title, String name, String url) {
         this.id = id;
         this.author = author;
-        this.groupId = groupId;
+        this.type = type;
         this.title = title;
         this.name = name;
         this.url = url;

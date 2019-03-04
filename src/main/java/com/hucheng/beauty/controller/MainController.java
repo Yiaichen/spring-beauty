@@ -10,65 +10,53 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * 主页控制器
+ *
+ * @author  vayi
+ * @date 2019/03/04
+ * @version 1.0
+ */
 @RestController
-@RequestMapping("/learn")
+@RequestMapping("/main")
 public class MainController {
 
-//    @Autowired
-//    private Image iamge;
 
-    @RequestMapping("")
-    public List<Image> index(){
+    @RequestMapping("/findBanner")
+    public List<Image> findBanner(){
 
         List<Image> learnList =new ArrayList<Image>();
 
-        Image bean =new Image("1","chen","1","情头","vayi","./static/images/01.jpg");
+        Image bean =new Image("1","chen","1","Banner","vayi","./static/images/Banner/05.jpg");
         learnList.add(bean);
-        bean =new Image("2","chen","1","情头","vayi","./static/images/02.jpg");
+        bean =new Image("2","chen","1","Banner","vayi","./static/images/Banner/07.jpg");
         learnList.add(bean);
-        bean =new Image("3","chen","1","情头","vayi","./static/images/04.jpg");
+        bean =new Image("3","chen","1","Banner","vayi","./static/images/Banner/06.jpg");
         learnList.add(bean);
-        bean =new Image("4","chen ","1","情头","vayi","./static/images/03.jpg");
-        learnList.add(bean);
-        bean =new Image("5","chen","1","情头","vayi","./static/images/05.jpg");
-        learnList.add(bean);
-        bean =new Image("6","chen","1","情头","vayi","./static/images/06.jpg");
-        learnList.add(bean);
-        bean =new Image("7","chen","1","情头","vayi","./static/images/07.jpg");
-        learnList.add(bean);
-        bean =new Image("8","chen","1","情头","vayi","./static/images/08.jpg");
-        learnList.add(bean);
-//        ModelAndView modelAndView = new ModelAndView("/beautyDetail");
-//        modelAndView.addObject("resultList", learnList);
         return learnList;
     }
 
-    @RequestMapping("/t")
-    public List<Image> index2(){
+    @RequestMapping("/findLover")
+    public List<Image> findLover(){
 
         List<Image> learnList =new ArrayList<Image>();
 
-        Image bean =new Image("1","chen","1","情头","vayi","/images/01.jpg");
+        Image bean =new Image("1","chen","Lover","情头","vayi","./static/images/01.jpg");
         learnList.add(bean);
-        bean =new Image("2","chen","1","情头","vayi","/images/02.jpg");
+        bean =new Image("2","chen","Lover","情头","vayi","./static/images/02.jpg");
         learnList.add(bean);
-        bean =new Image("3","chen","1","情头","vayi","/images/03.jpg");
+        bean =new Image("3","chen","Lover","情头","vayi","./static/images/04.jpg");
         learnList.add(bean);
-        bean =new Image("4","chen ","1","情头","vayi","/images/04.jpg");
+        bean =new Image("4","chen ","Lover","情头","vayi","./static/images/03.jpg");
         learnList.add(bean);
-        bean =new Image("5","chen","1","情头","vayi","/images/05.jpg");
+        bean =new Image("5","chen","Lover","情头","vayi","./static/images/05.jpg");
         learnList.add(bean);
-        bean =new Image("6","chen","1","情头","vayi","/images/06.jpg");
+        bean =new Image("6","chen","Lover","情头","vayi","./static/images/06.jpg");
         learnList.add(bean);
-        bean =new Image("7","chen","1","情头","vayi","/images/07.jpg");
+        bean =new Image("7","chen","Lover","情头","vayi","./static/images/07.jpg");
         learnList.add(bean);
-        bean =new Image("8","chen","1","情头","vayi","/images/08.jpg");
+        bean =new Image("8","chen","Lover","情头","vayi","./static/images/08.jpg");
         learnList.add(bean);
-        bean =new Image("9","chen","1","情头","vayi","/images/09.jpg");
-        learnList.add(bean);
-//        ModelAndView modelAndView = new ModelAndView("/template");
-//        modelAndView.addObject("resultList", learnList);
         return learnList;
     }
 
